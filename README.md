@@ -195,3 +195,23 @@ Response should be (if success):
 ```
 user
 ```
+
+### Log out User (close all Web & API sessions)
+
+In some cases you need force User to sign in again.
+
+This could be done next way:
+```PowerShell
+# !!! Replace USER_API_TOKEN and USER_ID with real one.
+
+$CropioHeader=@{"X-User-Api-Token"="USER_API_TOKEN"}
+$userId="USER_ID"
+$uri="https://cropio.com/api/v3/security/forced_log_out/users/$userId"
+
+(Invoke-RestMethod -Method Post -ContentType 'application/json' -Headers $CropioHeader -Uri $uri).data
+```
+
+Response should be (if success):
+```
+success : true
+```
