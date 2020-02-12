@@ -4,9 +4,9 @@
 
 Cropio API is HTTP JSON API and could be used with any programming language or OS. You only have to be able send HTTP requests (and HTTPS support).
 
-All workflows and full documentation available at http://docs.cropioapiv3.apiary.io/.
+All workflows and full documentation available at https://cropioapiv3.docs.apiary.io/.
 
-On http://docs.cropioapiv3.apiary.io you can generate code examples for all popular languages (Java, JS, Python, Ruby, C#, even for VisualBasic, etc.) But there missing PowerShell, so we created this docs to help our users who want to use Cropio API via PowerShell (OS Windows).
+On https://cropioapiv3.docs.apiary.io/ you can generate code examples for all popular languages (Java, JS, Python, Ruby, C#, even for VisualBasic, etc.) But there missing PowerShell, so we created this docs to help our users who want to use Cropio API via PowerShell (OS Windows).
 
 This docs contains only basic examples to help you start working with Cropio API via PowerShell (but our API is quite simple, so I believe this examples should be enough).
 
@@ -48,7 +48,7 @@ Invoke-RestMethod [-Method <WebRequestMethod>] [-UseBasicParsing] [-Uri] <Uri>
 
 ### Obtaining API token with login and password
 
-User must make Login action and obtain USER_API_TOKEN token that required for all next requests. USER_API_TOKEN is a string, that should be added for all request to Cropio API (http://docs.cropioapiv3.apiary.io/#reference/authentication/login-request).
+User must make Login action and obtain USER_API_TOKEN token that required for all next requests. USER_API_TOKEN is a string, that should be added for all request to Cropio API (https://cropioapiv3.docs.apiary.io/#reference/authentication/login-request).
 
 PowerShell example:
 ```PowerShell
